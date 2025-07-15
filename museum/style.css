@@ -30,3 +30,86 @@ h6 {
 	font-size: inherit;
 	font-weight: 400;
 }
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a {
+	color: inherit;
+}
+
+/* ------------------------------------------------- */
+
+html {
+	scroll-behavior: smooth;
+}
+.wrapper {
+}
+
+.header {
+	background-color: #030303;  /* temporary */
+	color: #fff;
+
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+}
+
+.header__logo {
+	padding-left: 74px;
+
+	font-family: Forum;
+	font-size: 28px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+
+	background: url("assets/svg/logo.svg") no-repeat;
+}
+
+.header__menu {
+	width: 775px;
+}
+
+.header__menu-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__menu-item {
+}
+
+.header__menu-link {
+	font-family: Roboto;
+	font-weight: 200;
+	font-size: 22px;
+	letter-spacing: 2px;
+	line-height: 100%;
+}
+
+.main {
+}
+
+.section {
+}
+
+.dark-section {
+	background-color: #030303;
+}
+
+.video-section {
+}
+
+.footer {
+}
