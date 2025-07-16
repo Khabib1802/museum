@@ -4,11 +4,15 @@
 	border: 0;
 }
 
+html {
+	box-sizing: border-box
+}
+
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 input,
@@ -45,6 +49,11 @@ a {
 html {
 	scroll-behavior: smooth;
 }
+
+body {
+	font-family: roboto, sans-serif;
+}
+
 .wrapper {
 }
 
@@ -91,11 +100,19 @@ html {
 }
 
 .header__menu-link {
-	font-family: Roboto;
 	font-weight: 200;
 	font-size: 22px;
 	letter-spacing: 2px;
 	line-height: 100%;
+	transition: color 0.3s;
+}
+
+.header__menu-link:hover {
+	color: #9D8665;
+}
+
+.header__menu-link:active {
+	color: #7E6C51;
 }
 
 .main {
