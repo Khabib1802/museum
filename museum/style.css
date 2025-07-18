@@ -63,8 +63,6 @@ body {
 }
 
 .section-title {
-	margin-bottom: 25px;
-
 	font-family: Forum;
 	font-size: 80px;
 	line-height: 90px;
@@ -190,7 +188,7 @@ body {
 }
 
 .welcome-subtitle {
-	margin-bottom: 75px;
+	margin: 25px 0 75px;
 
 	font-weight: 300;
 	font-size: 28px;
@@ -314,7 +312,7 @@ body {
 	background: url(assets/svg/arrows/2.svg) no-repeat;
 }
 
-.active-btn {
+.welcome-slider--active-btn {
 	background-color: #d2b183;
 }
 
@@ -448,3 +446,212 @@ body {
 	transform: translateX(-50%);
 }
 
+/* video section */
+
+.video-section__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 75px 0;
+}
+
+.video-section__text {
+	max-width: 720px;
+	margin-left: 100px;
+
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 38.5px;
+}
+
+.video-section__video {
+	position: relative;
+	width: 100%;
+	height: 735px;
+	margin-bottom: 40px;
+
+}
+
+.video-section__video video {
+	width: 100%;
+  height: 100%;
+	object-fit: cover;
+
+}
+
+.video__play-btn {
+	width: 0;
+	height: 0;
+
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 23px solid #b3b3b3;
+	cursor: pointer;
+
+	transition: border-left-color 0.3s;
+}
+
+.video__play-btn:hover {
+	border-left-color: #989898;
+}
+
+.video__play-btn--big {
+	position: absolute;
+	top: 44.1%;
+	left: 50.8%	;
+
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 90px solid #ffffff;
+
+	background-color: transparent;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.video__play-btn--big::before {
+	content: '';
+	position: absolute;
+
+	width: 220px;
+	height: 220px;
+	border: 10px solid #ffffff;
+	border-radius: 50%;
+
+	transform: translateX(-75%) translateY(-50%);
+	transition: border-color 0.3s;
+}
+
+.video__play-btn--big:hover::before {
+	border-color: #989898;
+}
+
+.video__player {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+	width: 100%;
+	height: 85px;
+	padding: 25px 30px;
+
+	background-color: #000000;
+}
+
+.progress {
+  height: 8px;
+	width: 930px;
+
+  background: linear-gradient(to right, #710707 0%, #710707 54%, #c4c4c4 54%, #c4c4c4 100%);
+  appearance: none;
+  cursor: pointer;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+
+  background: #ffffff;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+}
+
+.video__volume {
+	width: 40px;
+	height: 30px;
+
+	background: url("assets/svg/video-slider/volume.svg") no-repeat;
+	cursor: pointer;
+
+	transition: filter 0.3s;
+}
+
+.video__volume:hover {
+	filter: invert(65%) sepia(8%) saturate(231%) hue-rotate(22deg) brightness(135%) contrast(89%);
+}
+
+.volume-progress {
+	width: 155px;
+
+  background: linear-gradient(to right, #710707 0%, #710707 43%, #c4c4c4 43%, #c4c4c4 100%);
+}
+
+.video__full {
+	width: 35px;
+	height: 35px;
+
+	background: url("assets/svg/video-slider/full.svg");
+	cursor: pointer;
+
+	transition: filter 0.3s;
+}
+
+.video__full:hover {
+	filter: invert(65%) sepia(8%) saturate(231%) hue-rotate(22deg) brightness(135%) contrast(89%);
+}
+
+.video-slider {
+}
+
+.video-slider__slider {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+}
+
+.video-slider__item {
+	width: 450px;
+
+	aspect-ratio: 16 / 9;
+}
+
+.video-slider__item iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.video-slider__pagination {
+	display: flex;
+	justify-content: space-between;
+	max-width: 200px;
+	margin: 0 auto 75px;
+}
+
+.video-slider__pagination>button {
+	width: 12px;
+	height: 12px;
+
+	transition: filter 0.3s, background-color 0.3s;
+}
+
+.video-slider__prev {
+	background: url("assets/svg/video-slider/prev.svg") no-repeat;
+}
+
+.video-slider__next {
+	background: url("assets/svg/video-slider/next.svg") no-repeat;
+}
+
+.video-slider__prev:hover,
+.video-slider__next:hover {
+	filter: invert(14%) sepia(64%) saturate(32115%) hue-rotate(351deg) brightness(40%) contrast(115%);
+}
+
+
+.video-slider__dot {
+	border-radius: 50%;
+	background-color: #999999;
+}
+
+.video-slider__dot:hover {
+	background-color: #710707;
+}
+
+.video-slider--active-btn {
+	background-color: #333333;
+}
