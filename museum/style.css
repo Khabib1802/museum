@@ -766,6 +766,12 @@ body {
 
 	border: 2px solid #000;
 	border-radius: 50%;
+
+	transition: border-color 0.3s;
+}
+
+.form__radio:hover:before {
+	border-color: #9D8665;
 }
 
 .form__radio:checked::after {
@@ -790,8 +796,15 @@ body {
 	text-align: left;
 }
 
-.form__ticket-type .form__label {
+.form__radio-label {
 	padding-left: 35px;
+
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.form__radio-label:hover {
+	color: #9D8665;
 }
 
 .form__amount {
@@ -819,6 +832,12 @@ body {
 	font: inherit;
 
 	background-color: transparent;
+
+	transition: color 0.3s;
+}
+
+.form__amount-btn:hover {
+	color: #9d8665;
 }
 
 .decrease-btn {
@@ -861,6 +880,12 @@ input::-webkit-inner-spin-button {
 
 	border-radius: 2px;
 	background: #000;
+
+	transition: background-color 0.3s;
+}
+
+.form__btn:hover {
+	background-color: #9D8665;
 }
 
 /* parallax */
