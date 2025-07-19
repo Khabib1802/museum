@@ -98,6 +98,7 @@ body {
 }
 
 .section {
+
 }
 
 .dark-section {
@@ -661,6 +662,156 @@ body {
 
 .video-slider--active-btn {
 	background-color: #333333;
+}
+
+/* tickets section */
+
+.tickets__title {
+	margin: 75px 0 100px;
+}
+
+.tickets__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tickets__img {
+	margin: 0 60px 75px 0;
+}
+
+.tickets__form {
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 auto;
+}
+
+.form {
+}
+
+.form__ticket-type {
+}
+
+.form__title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.form__radio-list-item {
+	margin-top: 25px;
+}
+
+.form__radio {
+
+	appearance: none;
+}
+
+.form__radio::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	width: 17px;
+	height: 17px;
+
+	border: 2px solid #000;
+	border-radius: 50%;
+}
+
+.form__radio:checked::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 5px;
+
+	width: 7px;
+	height: 7px;
+
+	background-color: #000000;
+	border-radius: 50%;
+}
+
+.form__label {
+	position: relative;
+
+	font-size: 22px;
+	font-weight: 300;
+
+	text-align: left;
+}
+
+.form__ticket-type .form__label {
+	padding-left: 35px;
+}
+
+.form__amount {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.form__amount-counter {
+	display: flex;
+	justify-content: space-between;
+	max-width: 150px;
+	margin: 15px 0 10px;
+	padding: 3px 14px;
+
+	font-weight: 400;
+	font-size: 32px;
+	text-align: center;
+
+	border: 3px solid #000;
+}
+
+.form__amount-btn {
+	font: inherit;
+
+	background-color: transparent;
+}
+
+.decrease-btn {
+}
+
+.form__count {
+	width: 100%;
+	margin: 0 5px;
+
+	text-align: center;
+	font-size: 22px;
+	font-weight: 300;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.increase-btn {
+}
+
+.form__total {
+	margin: 40px 0 60px;
+
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 1.65px;
+}
+
+.form__btn {
+	padding: 11px 38px;
+
+	color: #ffffff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 2px;
+
+	border-radius: 2px;
+	background: #000;
 }
 
 /* parallax */

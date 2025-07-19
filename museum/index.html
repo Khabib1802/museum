@@ -193,7 +193,56 @@
 			</section>
 			<!-- tickets section -->
 			<section class="section">
-				<div class="container"></div>
+				<div class="container">
+					<h2 class="tickets__title section-title title-decoration">Buy tickets</h2>
+					<div class="tickets__row">
+						<img src="assets/img/tickets/1.jpg" alt="image" class="tickets__img">
+						<form action="#!" class="tickets__form form">
+							<fieldset class="form__ticket-type">
+								<legend class="form__title">Ticket Type</legend>
+								<ul class="form__radio-list">
+									<li class="form__radio-list-item">
+										<label class="form__label">
+											<input type="radio" name="form__radio" class="form__radio" checked>
+											Permanent exhibition
+										</label>
+									</li>
+									<li class="form__radio-list-item">
+										<label class="form__label">
+											<input type="radio" name="form__radio" class="form__radio">
+											Temporary exhibition
+										</label>
+									</li>
+									<li class="form__radio-list-item">
+										<label class="form__label">
+											<input type="radio" name="form__radio" class="form__radio">
+											Combined Admission
+										</label>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="form__amount">
+								<legend class="form__title">Amount</legend>
+								<label for="form__number-basic" class="form__label">Basic 18+
+									<div class="form__amount-counter">
+										<button class="form__amount-btn decrease-btn">–</button>
+										<input type="number" class="form__count" value="1" min="0" readonly>
+										<button class="form__amount-btn increase-btn">+</button>
+									</div>
+								</label>
+								<label for="form__number-basic" class="form__label">Senior 65+
+									<div class="form__amount-counter">
+										<button class="form__amount-btn decrease-btn">–</button>
+										<input type="number" class="form__count" value="1" min="0" readonly>
+										<button class="form__amount-btn increase-btn">+</button>
+									</div>
+								</label>
+								<p class="form__total">Total €<span>220</span></p>
+								<button class="form__btn">Buy Now</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
 			</section>
 			<!-- parallax -->
 			<div class="parallax"></div>
