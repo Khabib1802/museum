@@ -803,6 +803,7 @@ body {
 	font-weight: 300;
 
 	text-align: left;
+
 }
 
 .form__radio-label {
@@ -820,6 +821,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+
+.form__amount .form__title {
 	text-align: right;
 }
 
@@ -871,7 +875,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form__total {
-	margin: 40px 0 60px;
+	margin: 35px 0 60px;
 
 	font-size: 28px;
 	font-weight: 700;
