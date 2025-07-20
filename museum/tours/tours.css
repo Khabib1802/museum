@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+body {
+  overflow: hidden; /* Скрываем scrollbars */
+}
+
+iframe {
+	width: 100vw;
+	height: 100vh;
+}
